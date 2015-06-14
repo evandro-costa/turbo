@@ -59,7 +59,7 @@ install:
   #
   # Build LuaSec from Git.
   - cd %TURBO_ROOT%\src
-  - git clone git@github.com:kernelsauce/luasec.git
+  - git clone https://github.com/kernelsauce/luasec.git
   - cd luasec
   - call luarocks make luasec-0.5-3.rockspec OPENSSL_INCDIR=%OPENSSL_ROOT%\include OPENSSL_LIBDIR=%OPENSSL_ROOT%\lib
 
