@@ -10,7 +10,7 @@ SET VCVARSALL_BAT="C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\vcvars
 setx PATH "%PATH%;%TURBO_ROOT%;%TURBO_LUAROCKS_BIN" /M
 @powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
 choco install -y visualstudio2013professional git mingw gnuwin strawberryperl
-call %VCVARSALL% amd64
+call %VCVARSALL_BAT% amd64
 SET PATH=%PATH%;%TURBO_ROOT%;%TURBO_LUAROCKS_BIN;C:\Program Files (x86)\Git\cmd;C:\GnuWin\bin;C:\tools\mingw64\bin;C:\Program Files (x86)\Windows Kits\8.1\bin\x64
 rm -rf %TURBO_ROOT%
 mkdir %TURBO_ROOT%
