@@ -89,4 +89,5 @@ echo ===========================
 echo Turbo is now installed. Try it by running 'luajit %TURBO_SRC%\turbo\examples\helloworld.lua' and point your browser to http://localhost:8888.
 echo Have a nice day!
 echo ===========================
+pause
 
