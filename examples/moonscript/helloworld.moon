@@ -1,5 +1,4 @@
-
---- Turbo.lua Hello world example
+--- Turbo.moon Hello world example
 --
 -- Copyright 2013 John Abrahamsen
 --
