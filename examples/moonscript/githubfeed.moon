@@ -43,9 +43,8 @@ with require "turbo"
    @write [[</body></html>]]
    
  with turbo.web.Application\new {
-    {"^/$", GithubFeed}
-  }
-  
+  {"^/$", GithubFeed}
+ }
   \listen 8888
   
  .ioloop.instance!\start!
