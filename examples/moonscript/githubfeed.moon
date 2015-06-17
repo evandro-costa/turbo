@@ -42,7 +42,7 @@ with require "turbo"
 
    @write [[</body></html>]]
    
- with turbo.web.Application\new {
+ with .web.Application\new {
   {"^/$", GithubFeed}
  }
   \listen 8888
